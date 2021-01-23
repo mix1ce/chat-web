@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "stylelint-config-airbnb",
+    "stylelint-config-rational-order",
+    "stylelint-prettier/recommended"
+  ],
+  "plugins": [
+    "stylelint-order",
+    "stylelint-scss",
+    "stylelint-config-rational-order/plugin"
+  ],
+  "rules": {
+    "max-nesting-depth": [4, {
+      "ignore": ["pseudo-classes"]
+    }],
+    "order/properties-order": [],
+    "plugin/rational-order": [
+      true,
+      {
+        "empty-line-between-groups": true
+      }
+    ],
+    "no-empty-source": null,
+    "declaration-empty-line-before": null,
+    "no-missing-end-of-source-newline": null
+  }
+}
