@@ -17,6 +17,7 @@
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": "error",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
+    "no-param-reassign": [2, {"props": false}]
   }
 }

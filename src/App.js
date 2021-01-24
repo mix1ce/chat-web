@@ -8,7 +8,7 @@ import Main from './components/pages/Main'
 const theme = {
   mainColors: {
     white: '#ffffff',
-    placeholderColor: '#4a586b',
+    placeholderColor: '#57677e',
     main: '#10102b',
     gray: '#23233f',
     lightGray60: '#b7bfcb',

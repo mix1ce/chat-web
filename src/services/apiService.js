@@ -1,6 +1,6 @@
 import { API_BASE_URL } from '../misc/config'
 
-const getResource = async (url, method, headers = {}, body) => {
+const getResource = async (url, method, headers = {}, body = {}) => {
   const res = await fetch(`${API_BASE_URL}${url}`, {
     method,
     headers: {
@@ -20,7 +20,12 @@ export class API {
   }
 
   static async registerUser(body) {
-    const res = await getResource('/api/users/', 'POST', {}, body)
+    const res = await getResource('/api/user/', 'POST', {}, body)
     return res
+  }
+
+  static async getUsers() {
+    const res = await getResource('/api/user/', 'GET')
+    return res.result
   }
 }
